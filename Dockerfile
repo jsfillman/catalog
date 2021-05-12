@@ -41,3 +41,4 @@ ENTRYPOINT [ "/kb/deployment/bin/dockerize" ]
 # be overidden by docker-compose at startup
 CMD [ "-template", "/kb/deployment/conf/.templates/deploy.cfg.templ:/kb/deployment/conf/deploy.cfg", \
       "/kb/deployment/services/catalog/start_service" ]
+
