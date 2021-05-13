@@ -1,5 +1,10 @@
-FROM kbase/sdkbase2:python AS build
+# Install dependencies needed to run kaniko in catalog
+FROM gcr.io/kaniko-project/executor:latest AS kaniko
+ENV DOCKER_CONFIG /kaniko/.docker
+COPY --from=kaniko /kaniko /kaniko
 
+# Continue standard catalog build
+FROM kbase/sdkbase2:python AS build
 
 COPY . /tmp/catalog
 RUN cd /tmp/catalog && make deploy-service deploy-server-control-scripts
@@ -21,11 +26,15 @@ COPY requirements.txt requirements.txt
 RUN source activate root && \
     pip install -r requirements.txt
 
+# Install kubectl
 RUN apt-get update && apt-get install -y apt-transport-https gnupg2; \
     curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - ; \
     echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | tee -a /etc/apt/sources.list.d/kubernetes.list; \
     apt-get update; \
     apt-get install -y kubectl
+
+# Copy yaml template (and test python) into container
+COPY kaniko /kb/deployment/kaniko
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.vcs-url="https://github.com/kbase/catalog.git" \
@@ -33,7 +42,6 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.schema-version="1.0.0-rc1" \
       us.kbase.vcs-branch=$BRANCH \
       maintainer="Steve Chan sychan@lbl.gov"
-
 
 ENTRYPOINT [ "/kb/deployment/bin/dockerize" ]
 

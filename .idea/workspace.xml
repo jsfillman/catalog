@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c88cde7-6e13-4251-b94e-24e2b59d6451" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test-kaniko.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/build/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/test-build.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaniko/test-kaniko.py" beforeDir="false" afterPath="$PROJECT_DIR$/kaniko/test-kaniko.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1sN5iA79rGmrcQCSu1N7wDpG5f7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -35,12 +47,33 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../daily_logs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../daily_logs/2021-05-12.md" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/../../../daily_logs" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Dockerfile kaniko" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="" />
+          <option name="buildCliOptions" value="--target kaniko" />
+          <option name="buildKitEnabled" value="true" />
+          <option name="buildOnly" value="true" />
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile kaniko" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,7 +84,9 @@
       <option name="presentableId" value="Default" />
       <updated>1620700332122</updated>
       <workItem from="1620700334823" duration="1308000" />
-      <workItem from="1620780074040" duration="719000" />
+      <workItem from="1620780074040" duration="3573000" />
+      <workItem from="1620784699609" duration="7330000" />
+      <workItem from="1620864299905" duration="1928000" />
     </task>
     <servers />
   </component>
