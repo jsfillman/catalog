@@ -1,7 +1,9 @@
 coverage
+datetime
 docker>=3.5
 gitpython
-pykaniko
+jinja2
+kubernetes
 pymongo==3.7
 pyyaml
 semantic_version

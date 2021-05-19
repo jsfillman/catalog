@@ -2,12 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c88cde7-6e13-4251-b94e-24e2b59d6451" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kaniko/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/build/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/test-build.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/kaniko-build.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/kaniko-template.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/recycle/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/recycle/build/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/recycle/kaniko-test.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/recycle/load-test.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/recycle/test-build.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/recycle/test-build2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/recycle/test-kaniko.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/recycle/test-load.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/recycle/test-ttl-deploy.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/tmp/kaniko-my-image-name-20210518183242358073.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/tmp/kaniko-my-image-name-20210518183549781079.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/tmp/kaniko-my-image-name-20210518183648203539.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/tmp/load-test.jinja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/tmp/load-test.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/tmp/really_tmp.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaniko/tmp/test-load.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kaniko/test-kaniko.py" beforeDir="false" afterPath="$PROJECT_DIR$/kaniko/test-kaniko.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaniko/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaniko/build/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaniko/kaniko-test.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaniko/test-build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaniko/test-kaniko.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaniko/test-ttl-deploy.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,16 +65,39 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../daily_logs/2021-05-12.md" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JupyterPython&#10;Markdown" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../daily_logs" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/../../../daily_logs" />
+      <recent name="$PROJECT_DIR$/kaniko" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.kaniko-build">
+    <configuration name="kaniko-build" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="catalog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kaniko" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kaniko/kaniko-build.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Dockerfile kaniko" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -71,6 +113,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.kaniko-build" />
         <item itemvalue="Docker.Dockerfile kaniko" />
       </list>
     </recent_temporary>
@@ -86,7 +129,10 @@
       <workItem from="1620700334823" duration="1308000" />
       <workItem from="1620780074040" duration="3573000" />
       <workItem from="1620784699609" duration="7330000" />
-      <workItem from="1620864299905" duration="1928000" />
+      <workItem from="1620864299905" duration="3814000" />
+      <workItem from="1620871044310" duration="1908000" />
+      <workItem from="1620878128366" duration="1186000" />
+      <workItem from="1621292226822" duration="16486000" />
     </task>
     <servers />
   </component>
@@ -95,5 +141,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/catalog$kaniko_build.coverage" NAME="kaniko-build Coverage Results" MODIFIED="1621393078188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kaniko" />
   </component>
 </project>
