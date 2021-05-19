@@ -1,9 +1,3 @@
-# Install dependencies needed to run kaniko in catalog
-FROM gcr.io/kaniko-project/executor:latest AS kaniko
-ENV DOCKER_CONFIG /kaniko/.docker
-COPY --from=kaniko /kaniko /kaniko
-
-# Continue standard catalog build
 FROM kbase/sdkbase2:python AS build
 
 COPY . /tmp/catalog
