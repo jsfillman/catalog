@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c88cde7-6e13-4251-b94e-24e2b59d6451" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kaniko/kaniko-build.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/kaniko-template.j2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/recycle/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/recycle/build/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/recycle/kaniko-test.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/recycle/load-test.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/recycle/test-build.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/recycle/test-build2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/recycle/test-kaniko.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/recycle/test-load.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/recycle/test-ttl-deploy.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/tmp/kaniko-my-image-name-20210518183242358073.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/tmp/kaniko-my-image-name-20210518183549781079.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/tmp/kaniko-my-image-name-20210518183648203539.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/tmp/load-test.jinja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/tmp/load-test.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/tmp/really_tmp.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaniko/tmp/test-load.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kaniko/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kaniko/build/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kaniko/kaniko-test.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kaniko/test-build.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kaniko/test-kaniko.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kaniko/test-ttl-deploy.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +108,7 @@
       <workItem from="1620864299905" duration="3814000" />
       <workItem from="1620871044310" duration="1908000" />
       <workItem from="1620878128366" duration="1186000" />
-      <workItem from="1621292226822" duration="16486000" />
+      <workItem from="1621292226822" duration="17225000" />
     </task>
     <servers />
   </component>
